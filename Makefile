@@ -194,7 +194,7 @@ tests: boatlibs
 	make -C $(BOAT_BASE_DIR)/tests all
 
 cppcheck: 
-	cppcheck  --enable=all -i$(BOAT_BASE_DIR)/sdk/third-party/ -i$(BOAT_BASE_DIR)/vendor/common/crypto/  -i$(BOAT_BASE_DIR)/sdk/protocol/boathlfabric/protos --force $(BOAT_BASE_DIR) 2> $(BOAT_BASE_DIR)/check.txt
+	cppcheck  --enable=all -i$(BOAT_BASE_DIR)/sdk/third-party/ -i$(BOAT_BASE_DIR)/vendor/common/crypto/  -i$(BOAT_BASE_DIR)/sdk/protocol/boathlfabric/protos --xml --force $(BOAT_BASE_DIR) 
 
 clean: cleanboatwallet cleanvendor cleandemo cleantests
 	-$(BOAT_RM) $(BOAT_BUILD_DIR)
