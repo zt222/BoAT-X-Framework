@@ -92,7 +92,7 @@ BOAT_RESULT BoatSignature( BoatWalletPriKeyCtx prikeyCtx,
 		BoatLog( BOAT_LOG_CRITICAL, "parameter can't be NULL." );
 		return BOAT_ERROR_INVALID_ARGUMENT;
 	}
-
+	ecdsPrefix = 0;
 	if( prikeyCtx.prikey_type == BOAT_WALLET_PRIKEY_TYPE_SECP256K1 )
 	{
 		result = ecdsa_sign_digest( &secp256k1,      // const ecdsa_curve *curve
