@@ -85,7 +85,7 @@ BOAT_RESULT BoatSignature( BoatWalletPriKeyCtx prikeyCtx,
 	BOAT_RESULT result = BOAT_SUCCESS;
 	
 	(void)rsvd;
-	
+	ecdsPrefix = 0;
 	/* param check */
 	if( (digest == NULL) || (signatureResult == NULL) )
 	{
