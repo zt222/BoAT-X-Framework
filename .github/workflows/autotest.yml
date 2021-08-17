@@ -2,9 +2,9 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ boatiotsdk_2_0-dev ]
   pull_request:
-    branches: [ master ]
+    branches: [ boatiotsdk_2_0-dev ]
 
 jobs:
   build:
